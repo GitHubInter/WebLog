@@ -113,6 +113,7 @@ footer .share p{
 .album>div:hover,.case>div:hover{
 	background-color: #fff;
 	border: 1px solid #ddd;
+	box-shadow: 0 6px 3px #eee;
 }
 .album>div:hover>.info,.case>div:hover>.item>strong{
 	color: #3b426c;
