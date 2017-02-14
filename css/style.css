@@ -108,12 +108,12 @@ footer .share p{
 .album>div,.case>div{
 	padding: 15px;
 	transition: all .5s ease .1s;
-	border: 1px solid #f2f2f2;
+	border: 1px solid rgba(242,242,242,0);
 }
 .album>div:hover,.case>div:hover{
 	background-color: #fff;
 	border: 1px solid #ddd;
-	box-shadow: 0 6px 3px #eee;
+	box-shadow: 0 6px 3px #c8c8c8;
 }
 .album>div:hover>.info,.case>div:hover>.item>strong{
 	color: #3b426c;
