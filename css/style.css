@@ -3,6 +3,7 @@
 @font-face{font-family:"Segoe Script";src:url(../fonts/SEGOESC.TTF);}
 body{font-family:"Segoe","Helvetica Neue",Helvetica,Arial,sans-serif;background-color:#f2f2f2;}/*#3b426c*//*#42e0c9*/
 a,a:hover{text-decoration:none;}
+ul,ol{list-style-type:none;}
 .clearfix:after{content:"";display:block;clear:both;}
 .clearfix{zoom:1;}
 .fl{float:left;}
@@ -13,6 +14,7 @@ section>.container>div>h2{text-indent:15px;margin:0;font-family:"Segoe";font-siz
 /*common end*/
 .navbar-default{
 	background-color: #fff;
+	margin-bottom: 20px;
 }
 .navbar-default .navbar-nav li a{
 	padding: 15px 32px;
@@ -177,3 +179,108 @@ footer .share p{
 	transform: scale(1);
 }
 /*album case end*/
+.diary>.col-md-8>ul,.diary>.col-md-4>.card{
+	border: 1px solid #e7eaf1;
+	border-radius: 3px;
+	background-color: #fff;
+}
+.diary>.col-md-8>ul>li{
+	margin: 0 20px;
+	padding: 20px 0;
+}
+.diary>.col-md-8>ul>li+li{
+	border-top: 1px dashed #e7eaf1;
+}
+.diary>.col-md-8>ul>li>p{
+	margin: 0;
+	color: #999;
+}
+.diary>.col-md-8>ul>li>h5>a{
+	font-size: 16px;
+	font-weight: bold;
+	transition: all .2s ease .1s;
+}
+/*.diary>.col-md-4>.card{
+	height: 250px;
+}*/
+.diary>.col-md-4>.card>.title{
+	height: 150px;
+	background: url(../images/title_bg.png) no-repeat center center;
+	background-size: 100%;
+	position: relative;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+.head-portrait{
+	width: 110px;
+	height: 110px;
+	position: absolute;
+	bottom: -48%;
+	left: 10%;
+	border: 3px solid #fff;
+	border-radius: 6px;
+	background: url(../images/akita.jpg) no-repeat center center;
+	background-size: 100%;
+	overflow: hidden;
+}
+.diary>.col-md-4>.card>.text{
+	padding-left: 10%;
+	padding-bottom: 10px; 
+	width: 100%;
+}
+.diary>.col-md-4>.card>.text>h5,.diary>.col-md-4>.card>.text>p{
+	text-indent: 125px;
+	margin: 0;	
+}
+.diary>.col-md-4>.card>.text>h5{
+	font-size: 20px;
+	line-height: 30px;
+}
+.diary>.col-md-4>.card>.text>p{
+	font-size: 14px;
+	color: #999;
+	line-height: 22px;
+	height: 22px;
+}
+.diary>.col-md-4>.card>.text>p>a{
+	height: 22px;
+	display: inline-block;
+	text-indent: 6px;
+}
+.diary>.col-md-4>.card>.text>p>a>span{
+	height: 22px;
+	display: inline-block;
+	float: left;
+}
+.diary>.col-md-4>.card>.text>p>a>em{
+	background: url(../images/icon3.png) no-repeat center;
+	width: 10px;
+	height: 22px;
+	display: inline-block;
+	color: #999;
+	float: left;
+	transition: all .5s ease-in-out .1s;
+}
+.diary>.col-md-4>.card>.text>p>.active>em{
+	transform:rotate(180deg);
+}
+.diary .astir-text-box p{
+	margin: 0;
+	line-height: 28px;
+	padding-left: 30px;
+	font-size: 16px;
+	opacity: 0;
+	transition: all .8s ease-in-out .1s;
+}
+.diary .astir-text-box{
+	padding-top: 10px;
+	height: 0;
+	transition: all .3s ease-in-out .1s;
+	overflow: hidden;
+}
+.diary .open{
+	height: 150px;
+}
+.diary .open p{
+	opacity: 1;
+}
