@@ -50,7 +50,52 @@
 	<section>
 		<div class="container">
 			<div class="diary row">
-				
+				<div class="col-md-8">
+					<ul>
+						<li>
+							<h5><a href="">这是一个测试条目col-md-3</a></h5>
+							<p>这是一个测试条目col-md-3这是一个测试条目col-md-3这是一个测试条目col-md-3这是一个测试条目col-md-3这是一个测试条目col-md-3这是一个测试条目col-md-3这是一个测试条目col-md-3这是一个测试条目col-md-3这是一个测试条目col-md-3</p>
+						</li>
+						<li>
+							<h5><a href="">这是一个测试条目col-md-3</a></h5>
+							<p>这是一个测试条目col-md-3这是一个测试条目col-md-3这是一个测试条目col-md-3这是一个测试条目col-md-3这是一个测试条目col-md-3这是一个测试条目col-md-3这是一个测试条目col-md-3这是一个测试条目col-md-3这是一个测试条目col-md-3</p>
+						</li>
+						<li>
+							<h5><a href="">这是一个测试条目col-md-3</a></h5>
+							<p>这是一个测试条目col-md-3这是一个测试条目col-md-3这是一个测试条目col-md-3这是一个测试条目col-md-3这是一个测试条目col-md-3这是一个测试条目col-md-3这是一个测试条目col-md-3这是一个测试条目col-md-3这是一个测试条目col-md-3</p>
+						</li>
+						<li>
+							<h5><a href="">这是一个测试条目col-md-3</a></h5>
+							<p>这是一个测试条目col-md-3这是一个测试条目col-md-3这是一个测试条目col-md-3这是一个测试条目col-md-3这是一个测试条目col-md-3这是一个测试条目col-md-3这是一个测试条目col-md-3这是一个测试条目col-md-3这是一个测试条目col-md-3</p>
+						</li>
+						<li>
+							<h5><a href="">这是一个测试条目col-md-3</a></h5>
+							<p>这是一个测试条目col-md-3这是一个测试条目col-md-3这是一个测试条目col-md-3这是一个测试条目col-md-3这是一个测试条目col-md-3这是一个测试条目col-md-3这是一个测试条目col-md-3这是一个测试条目col-md-3这是一个测试条目col-md-3</p>
+						</li>  
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<div class="card">
+						<div class="title">
+							<div class="head-portrait"></div>
+						</div>
+						<div class="text">
+							<h5>FuCong</h5>
+							<p>Front-end development</p>
+							
+							<p><a href="javascript:void(0);" class=""><em></em><span>View details</span></a></p>
+							<div class="astir-text-box">
+								<p style="background: url(images/药箱.png) no-repeat 3px center;">Rising Star Technology Co Ltd.</p>
+								<p style="background: url(images/输入.png) no-repeat 3px center;">Shandong Technology and Business University</p>
+								<p style="background: url(images/地址.png) no-repeat 3px center;">Beijing</p>
+								<p style="background: url(images/家人.png) no-repeat 3px center;">Basketball, Heavy locomotive</p>	
+							</div>
+						</div>
+					</div>
+					<ul>
+						<li><a href=""></a></li>
+					</ul>
+				</div>
 			</div>
 			<div class="album row">
 				<h2>Album</h2>
@@ -73,7 +118,6 @@
 			</div>
 			<div class="case row">
 				<h2>Case</h2>
-				
   				<div class="col-md-3">
   					<a href="" class="item">
   						<p>
@@ -143,6 +187,21 @@
 		  </div>
 		</div>
 	</footer>
+	<script type="text/javascript">
+		$(function(){
+			$(".diary").find(".card .text a").click(function(){
+				$(this).toggleClass("active");
+				$(".astir-text-box").toggleClass("open");
+				var textstr = $(this).find("span").text();
+				console.log(textstr);
+				if (textstr=="View details") {
+					$(this).find("span").text("Drop details");
+				} else {
+					$(this).find("span").text("View details");
+				}
+			})
+		})
+	</script>
 </body>
 </html>
 
