@@ -8,9 +8,9 @@ ul,ol{list-style-type:none;}
 .clearfix{zoom:1;}
 .fl{float:left;}
 .fr{float:right;}
-section>.container>div{padding:15px 0 30px;}
-section>.container>div+div{border-top:1px dashed #ddd;}
-section>.container>div>h2{text-indent:15px;margin:0;font-family:"Segoe";font-size:22px;padding-bottom:15px;padding-top:6px;}
+section>.container>div{padding:0 15px 15px;}
+/*section>.container>div+div{border-top:1px dashed #ddd;}*/
+section>.container>div>h2{text-indent:30px;margin:0;font-family:"Segoe";font-size:20px;margin-bottom:5px;border-left:3px solid #42e0c9;}
 /*common end*/
 .navbar-default{
 	background-color: #fff;
@@ -111,12 +111,13 @@ footer .share p{
 	padding: 15px;
 	transition: all .5s ease .1s;
 	border: 1px solid rgba(242,242,242,0);
+	border-radius: 3px;
 	box-shadow: 0 3px 3px 2px rgba(200,200,200,0);
 }
 .album>div:hover,.case>div:hover{
 	background-color: #fff;
 	border: 1px solid #ddd;
-	box-shadow: 0 6px 9px 2px #c8c8c8;
+	box-shadow: 0 3px 9px 1px #c8c8c8;
 }
 .album>div:hover>.info,.case>div:hover>.item>strong{
 	color: #3b426c;
@@ -225,7 +226,7 @@ footer .share p{
 }
 .diary>.col-md-4>.card>.text{
 	padding-left: 10%;
-	padding-bottom: 10px; 
+	padding-bottom: 20px; 
 	width: 100%;
 }
 .diary>.col-md-4>.card>.text>h5,.diary>.col-md-4>.card>.text>p{
@@ -267,11 +268,14 @@ footer .share p{
 }
 .diary .astir-text-box p{
 	margin: 0;
-	line-height: 28px;
+	line-height: 50px;
 	padding-left: 30px;
 	font-size: 16px;
 	opacity: 0;
 	transition: all .8s ease-in-out .1s;
+}
+.diary .astir-text-box .double{
+	line-height: 24px;
 }
 .diary .astir-text-box{
 	padding-top: 10px;
@@ -280,8 +284,18 @@ footer .share p{
 	overflow: hidden;
 }
 .diary .open{
-	height: 150px;
+	height: 208px;
 }
 .diary .open p{
 	opacity: 1;
+}
+.list-group{
+	border-color: #e7eaf1;
+	margin-top: 20px;
+}
+.list-group>a{
+	border-color: #e7eaf1;
+}
+section>.container>.diary{
+	padding: 0 0 15px;
 }
