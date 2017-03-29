@@ -35,6 +35,7 @@ section>.container>div>h2{text-indent:30px;margin:0;font-family:"Segoe";font-siz
 	padding: 9px 15px;
 	font-size: 20px;
 	font-family: "Segoe Script";
+	line-height: 32px;
 }
 .navbar-default .collapse .navbar-nav>.open>a{
 	background-color: #fff;
