@@ -220,7 +220,7 @@ footer .share p{
 	height: 110px;
 	position: absolute;
 	bottom: -52%;
-	left: 10%;
+	left: 6%;
 	border: 3px solid #fff;
 	border-radius: 6px;
 	background: url(../images/akita.jpg) no-repeat center center;
@@ -228,12 +228,12 @@ footer .share p{
 	overflow: hidden;
 }
 .diary>.col-md-4>.card>.text{
-	padding-left: 10%;
+	padding-left: 7%;
 	padding-bottom: 20px; 
 	width: 100%;
 }
 .diary>.col-md-4>.card>.text>h5,.diary>.col-md-4>.card>.text>p{
-	text-indent: 125px;
+	text-indent: 116px;
 	margin: 0;	
 }
 .diary>.col-md-4>.card>.text>h5{
@@ -272,13 +272,28 @@ footer .share p{
 .diary .astir-text-box p{
 	margin: 0;
 	line-height: 50px;
-	padding-left: 30px;
-	font-size: 16px;
+	/*padding-left: 30px;*/
+	font-size: 14px;
 	opacity: 0;
 	transition: all .8s ease-in-out .1s;
+	width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	padding-right: 15px;
+}
+.diary .astir-text-box p span{
+	height: 50px;
+	display: inline-block;
+	float: left;
+	padding-right: 8px;
+}
+.diary .astir-text-box p span svg{
+	height: 50px;
 }
 .diary .astir-text-box .double{
-	line-height: 24px;
+	/*line-height: 25px;*/
+	cursor: pointer;
 }
 .diary .astir-text-box{
 	padding-top: 10px;
