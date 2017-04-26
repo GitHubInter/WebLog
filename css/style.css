@@ -101,6 +101,12 @@ footer .share p{
 	padding-left: 10px;
 	line-height: 20px;
 }
+/*Baidushare*/
+.bdshare-button-style1-16 a{
+	padding-left: 0 !important;
+	width: 17px;
+	background: none !important;
+}
 /*footer end*/
 .album .item{
 	display: block;
@@ -258,13 +264,18 @@ footer .share p{
 	float: left;
 }
 .diary>.col-md-4>.card>.text>p>a>em{
-	background: url(../images/icon3.png) no-repeat center;
+	/*background: url(../images/icon3.png) no-repeat center;*/
 	width: 10px;
 	height: 22px;
 	display: inline-block;
 	color: #999;
 	float: left;
 	transition: all .5s ease-in-out .1s;
+}
+.diary>.col-md-4>.card>.text>p>a>em>svg{
+	height: 22px;
+	width: 10px;
+	display: block;
 }
 .diary>.col-md-4>.card>.text>p>.active>em{
 	transform:rotate(180deg);
