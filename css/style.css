@@ -53,6 +53,9 @@ section>.container>div>h2{text-indent:30px;margin:0;font-family:"Segoe";font-siz
 .navbar-default .dropdown-menu{
 	border: none;
 }
+.navbar-default .navbar-nav .disabled,.navbar-default .navbar-nav .disabled:hover,.navbar-default .navbar-nav .disabled:active,.navbar-default .navbar-nav .disabled:focus{
+	color: #cad2d3;
+}
 /*nav end*/
 footer{
 	border-top: 1px solid #ddd;
@@ -103,9 +106,13 @@ footer .share p{
 }
 /*Baidushare*/
 .bdshare-button-style1-16 a{
-	padding-left: 0 !important;
-	width: 17px;
+	/*padding-left: 0 !important;*/
+	width: 0;
 	background: none !important;
+}
+.bdshare-button-style1-16 a svg{
+	position: relative;
+	left: -17px;
 }
 /*footer end*/
 .album .item{
