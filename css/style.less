@@ -1,0 +1,29 @@
+@charset "utf-8";
+*{margin:0;padding:0;}
+html{height: 100%;}
+body{font-family:"Segoe","Helvetica Neue",Helvetica,Arial,sans-serif;background-color: #fff;font-size:14px;height: 100%;}
+a,a:hover{text-decoration:none !important;outline:none;}
+.clearfix:after{content:"";display:block;clear:both;}
+.clearfix{zoom:1;}
+.fl{float:left;}
+.fr{float:right;}
+.common_width{width:1200px;margin:0 auto;}
+body ul,body p{margin: 0;}
+ul>li{list-style-type:none;}
+img{border:none;outline:none;}
+input{outline: none;border: 0;font-family:"Segoe","Helvetica Neue",Helvetica,Arial,sans-serif;background: none;}
+input[type="button"], input[type="submit"], input[type="reset"] {-webkit-appearance: none;}/*清除苹果按钮样式*/
+.btn:focus{outline: none !important;}
+@font-face{font-family:"Segoe";src:url(../fonts/SEGOE-REGULAR.OTF);}
+@font-face{font-family:"Segoe Script";src:url(../fonts/SEGOESC.TTF);}
+::-webkit-input-placeholder { /* WebKit browsers */color:#999;}
+::-webkit-scrollbar {width: 6px;height: 6px;}
+::-webkit-scrollbar-thumb {border-radius: 3px;background: rgba(0, 0, 0, 0.2);}
+/*------LESS------*/
+@opacity_hack_num:.7;
+@opacity_hack_num2:70;
+.opacity_hack(@opacity_hack_num,@opacity_hack_num2){opacity:@opacity_hack_num;filter:alpha(opacity=@opacity_hack_num2)};/*透明度*/
+@duration_time:.1s;
+@delay_time:.1s;
+@property:all;
+.transition(@duration_time,@delay_time,@property){transition: @property @duration_time ease @delay_time;}/*过渡*/
